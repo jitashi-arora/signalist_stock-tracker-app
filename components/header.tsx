@@ -3,8 +3,8 @@ import Image from "next/image";
 import NavItems from "@/components/navitems";
 import UserDropdown from "@/components/UserDropdown";
 
-const Header:() =>Element =()=>{
-    return (
+const Header = async ({ user }: { user: User }) => {
+return (
         <header className="sticky top-0 header">
             <div className="container header-wrapper">
                 <Link href="/">
@@ -13,7 +13,7 @@ const Header:() =>Element =()=>{
                 <nav className="hidden sm:block">
                     <NavItems/>
                 </nav>
-                <UserDropdown/>
+                <UserDropdown user={user}/>
             </div>
         </header>
     )
