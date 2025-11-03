@@ -8,7 +8,7 @@ return (
         <header className="sticky top-0 header">
             <div className="container header-wrapper">
                 <Link href="/">
-                    <Image src="/assets/icons/logo.svg" alt ="Signalist logo" width={140} height={32} className="h-8 w-auto curson-pointer"/>
+                    <Image src="/assets/icons/logo.svg" alt ="Stockify logo" width={140} height={32} className="h-8 w-auto curson-pointer"/>
                 </Link>
                 <nav className="hidden sm:block">
                     <NavItems/>
